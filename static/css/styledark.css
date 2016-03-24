@@ -1,6 +1,6 @@
 .nav {
 	background-color: rgba(54, 58, 67, 0.4);
-	border-bottom: 1px #45494e solid;
+	border-bottom: 1px transparent solid;
 	position: fixed;
 	top:0;
 	left:0;
