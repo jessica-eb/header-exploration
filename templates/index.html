@@ -1,0 +1,237 @@
+{% extends "base.html" %}
+{% block title %} - Home{% endblock %}
+{% block style %} {% block innerstyle %} {% endblock %} {% endblock %}
+{% block content %}
+
+		{% block header %}
+			<!-- HEADER -->
+			<nav class="nav">
+				<div class="nav__flex">
+					<div class="nav__logo">
+						<img src="{{ url_for('static', filename='img/logo-orange.png') }}" />
+					</div>
+					<div class="nav__item">
+						browse events
+					</div>
+				</div>
+				<div class="nav__flex">
+					<div class="nav__item">
+						help
+					</div>
+					<div class="nav__item">
+						sign up
+					</div>
+					<div class="nav__item">
+						log in
+					</div>
+					<div class="nav__item nav__item--create">
+						create event
+					</div>
+				</div>
+			</nav>
+		{% endblock %}
+
+		<!-- HOME -->
+		<section class="slide">
+			<div id="bkgd_grad" class="slide__bkgd">
+				<img class="hide" src="{{ url_for('static', filename='img/grad1.jpg') }}" />
+				<img class="hide" src="{{ url_for('static', filename='img/grad3.jpg') }}" />
+				<img class="hide" src="{{ url_for('static', filename='img/grad2.jpg') }}" />
+			</div>
+			<div class="slide__vertical flex">
+				<div class="slide__vertical__half">
+					<p class="title">
+						Manage guests, sales and orders at your event with the Organizer App
+					</p>
+					<div class="btn">
+						Download
+					</div>
+				</div><!--
+				--><div class="slide__vertical__half">
+					<div class="phone">
+						<img src="{{ url_for('static', filename='img/iphone-white.png') }}" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide">
+			<div class="slide__vertical">
+				<div class="flex flex--top">
+					<div class="slide__vertical__half pad--sm">
+						<p class="icon__title title--intro">
+							Customize your event page
+						</p>
+						<p class="icon__txt txt--intro">
+							Design your page, offer multiple ticket options including <span class="blue">reserved seating</span>, and add questions to get to know your attendees.
+						</p>
+					</div><!--
+					--><div class="slide__vertical__half pad--sm">
+						<p class="icon__title title--intro">
+							Let attendees pay online
+						</p>
+						<p class="icon__txt txt--intro">
+							See who's coming, how much money you've made, and stay organized with 24/7 access to your dashboard and reports.
+						</p>
+					</div>
+				</div>
+				<div class="flex flex--top">
+					<div class="slide__vertical__half pad--sm">
+						<p class="icon__title title--intro">
+							Track real-time progress
+						</p>
+						<p class="icon__txt txt--intro">
+							See who's coming, how much money you've made, and stay organized with 24/7 access to your dashboard and reports.
+						</p>
+					</div><!--
+					--><div class="slide__vertical__half pad--sm">
+						<p class="icon__title title--intro">
+							24/7 world class support
+						</p>
+						<p class="icon__txt txt--intro">
+							See who's coming, how much money you've made, and stay organized with 24/7 access to your dashboard and reports.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide slide--grey">
+			<div class="slide__vertical flex">
+				<div class="slide__vertical__half">
+					<p class="title--section">
+						Amplify your ticket sales.
+					</p>
+					<p class="txt--section">
+						Set up, manage, and sell out your music events &ndash; from intimate shows to multi-day festivals. With our ticketing and box office services, we'll ensure a fantastic experience for you and your fans the whole way through.
+					</p>
+				</div><!--
+				--><div class="slide__vertical__half">
+					<div class="phone phone--dark">
+						
+						<div class="ipad__img">
+							<img src="{{ url_for('static', filename='img/ipad.png') }}" />
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section class="slide">
+			<div class="slide__vertical flex">
+				<div class="slide__vertical__third">
+					<div class="icon">
+						<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id=".-copy" transform="translate(-354.000000, -2171.000000)" fill="#60DBA2">
+						            <path id="icon01" d="M370,2171 L370,2173 L370,2178.999 L354,2178.999 L357.999,2207 L365.999,2207 L365.999,2211 L394.999,2211 L394.999,2189 L392.571,2189 L393.999,2178.999 L378,2178.999 L378,2173 L378,2171 L370,2171 Z M372,2173 L376,2173 L376,2175 L372,2175 L372,2173 Z M372,2176.999 L376,2176.999 L376,2178.999 L372,2178.999 L372,2176.999 Z M356.306,2181 L391.694,2181 L390.551,2189 L386.743,2189 L387,2186.999 L384.98,2186.999 L383.464,2199 L364.535,2199 L363,2186.999 L360.979,2186.999 L362.8,2201 L365.999,2201 L365.999,2204.999 L359.735,2204.999 L356.306,2181 Z M386.485,2191 L392,2191 L392,2194.999 L385.971,2194.999 L386.485,2191 Z M368,2201 L385.2,2201 L385.457,2199 L392.999001,2199 L392.999001,2209 L368,2209 L368,2201 Z" transform="translate(374.499500, 2191.000000) rotate(-180.000000) translate(-374.499500, -2191.000000) "></path>
+						        </g>
+						    </g>
+						</svg>
+					</div>
+					<div class="icon__title">
+						Card Reader 
+					</div>
+					<div class="icon__txt">
+						Fill in your event details, choose your ticket types, and voilà—your page is ready for action!
+					</div>
+				</div><!--
+				--><div class="slide__vertical__third">
+					<div class="icon">
+						<svg width="40px" height="32px" viewBox="0 0 40 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id=".-copy" transform="translate(-708.000000, -2175.000000)" fill="#60DBA2">
+						            <path id="icon02" d="M746,2197 L740,2197 L740,2189 L716,2189 L716,2197 L710,2197 L710,2183 L746,2183 L746,2197 Z M718,2191 L738,2191 L738,2205 L718,2205 L718,2191 Z M708,2181 L708,2199 L716,2199 L716,2207 L740,2207 L740,2199 L748,2199 L748,2181 L708,2181 Z M720,2201 L720,2199 L736,2199 L736,2201 L720,2201 Z M720,2197 L720,2195 L736,2195 L736,2197 L720,2197 Z M718,2179 L718,2177 L738,2177 L738,2179 L740,2179 L740,2175 L716,2175 L716,2179 L718,2179 Z" ></path>
+						        </g>
+						    </g>
+						</svg>
+					</div>
+					<div class="icon__title">
+						Printer
+					</div>
+					<div class="icon__txt">
+						Fill in your event details, choose your ticket types, and voilà—your page is ready for action!
+					</div>
+				</div><!--
+				--><div class="slide__vertical__third">
+					<div class="icon">
+						<svg width="32px" height="32px" viewBox="0 0 32 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						        <g id=".-copy" transform="translate(-1069.000000, -2175.000000)" fill="#60DBA2">
+						            <path id="icon03" d="M1091,2175 C1091,2175 1091,2182 1085,2182 C1079,2182 1079,2175 1079,2175 L1069,2175 L1069,2215 L1079,2215 C1079,2215 1079,2209 1085,2209 C1091,2209 1091,2215 1091,2215 L1101,2215 L1101,2175 L1091,2175 Z M1099,2213 L1093,2213 C1092.27413,2209.68 1089.87732,2207 1085,2207 C1080.12268,2207 1077.74931,2209.68 1077,2213 L1071,2213 L1071,2177 L1077,2177 C1077.731,2180.32 1079.96692,2184 1085,2184 C1090.03308,2184 1092.269,2180.32 1093,2177 L1099,2177 L1099,2213 Z M1095,2196 L1091,2196 L1091,2194 L1095,2194 L1095,2196 Z M1087,2196 L1083,2196 L1083,2194 L1087,2194 L1087,2196 Z M1079,2196 L1075,2196 L1075,2194 L1079,2194 L1079,2196 Z"></path>
+						        </g>
+						    </g>
+						</svg>
+					</div>
+					<div class="icon__title">
+						Ticket Stock for BOCA
+					</div>
+					<div class="icon__txt">
+						Fill in your event details, choose your ticket types, and voilà—your page is ready for action!
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="slide slide--full">
+			<div class="slide__vertical flex">
+				<div id="circle_txt" class="slide__vertical__half">
+					<p class="title--section">
+						Amplify your ticket sales.
+					</p>
+					<p class="txt--section">
+						Set up, manage, and sell out your music events &ndash; from intimate shows to multi-day festivals. With our ticketing and box office services, we'll ensure a fantastic experience for you and your fans the whole way through.
+					</p>
+				</div><!--
+				--><div class="slide__vertical__half">
+					<div class="phone phone--dark">
+						<div id="circle_outer" class="circle">
+						</div>
+						<div id="circle_inner" class="circle circle--inner">
+						</div>
+						<div id="phone_light" class="phone__img">
+							<img src="{{ url_for('static', filename='img/iphone-white.png') }}" />
+						</div>
+						<div id="phone_dark" class="phone__img hide">
+							<img src="{{ url_for('static', filename='img/iphone-dark.png') }}" />
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+		<section id="slide_dark" class="slide slide--dark">
+			<div class="slide__vertical flex">
+				<p class="title--section">
+					Lorem ipsum dolor sit amet,
+				</p>
+				<p class="txt--section" style="margin:0">
+					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</section>
+		<section class="slide slide--footer">
+			<div class="slide__bkgd bkgd--footer">
+				<img src="{{ url_for('static', filename='img/footer.png') }}" />
+			</div>
+			<div class="slide__vertical center">
+				<p class="title title--footer">
+					It's free to get started
+				</p>
+				<div class="btn btn--footer">
+					Text me the download link
+				</div>
+			</div>
+		</section>
+
+	</body>
+	<script src="{{ url_for('static', filename='js/gsap.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/drawSVG.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
+
+{% endblock %}

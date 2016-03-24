@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styledark.css') }}">
+{% endblock %}
+
+{% block header %}
+
+<nav class="nav">
+	<div class="nav__flex">
+		<div class="nav__logo">
+			<img src="{{ url_for('static', filename='img/logo-white.png') }}" />
+		</div>
+		<div class="nav__item">
+			browse events
+		</div>
+	</div>
+	<div class="nav__flex">
+		<div class="nav__item">
+			help
+		</div>
+		<div class="nav__item">
+			sign up
+		</div>
+		<div class="nav__item">
+			log in
+		</div>
+		<div class="nav__item nav__item--create">
+			create event
+		</div>
+	</div>
+</nav>
+
+{% endblock %}

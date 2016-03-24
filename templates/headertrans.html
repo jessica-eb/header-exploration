@@ -1,0 +1,61 @@
+{% extends "index.html" %}
+
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styletrans.css') }}">
+{% endblock %}
+
+{% block header %}
+
+<nav class="nav">
+	<div class="nav__flex">
+		<div class="nav__logo">
+			<img src="{{ url_for('static', filename='img/logo-white.png') }}" />
+		</div>
+		<div class="nav__item">
+			browse events
+		</div>
+	</div>
+	<div class="nav__flex">
+		<div class="nav__item">
+			help
+		</div>
+		<div class="nav__item">
+			sign up
+		</div>
+		<div class="nav__item">
+			log in
+		</div>
+		<div class="nav__item nav__item--create">
+			create event
+		</div>
+	</div>
+</nav>
+
+<script>
+function handleScroll() {
+	document.addEventListener("scroll", function() {
+
+		if (window.innerHeight - document.body.scrollTop < 35) {
+			var nav = document.getElementsByClassName('nav__item');
+			var logo = document.getElementsByClassName('nav__logo');
+			logo[0].children[0].src = "static/img/logo-dark.png";
+			for (var i = 0; i < nav.length; i++) {
+				nav[i].style.color = "#000"
+			}
+		}
+		if (window.innerHeight - document.body.scrollTop > 35 
+			|| ((4 * window.innerHeight) - document.body.scrollTop < 35)) {
+			var logo = document.getElementsByClassName('nav__logo');
+			var nav = document.getElementsByClassName('nav__item');
+			logo[0].children[0].src = "static/img/logo-white.png";
+			for (var i = 0; i < nav.length; i++) {
+				nav[i].style.color = "#fff";
+
+			}
+		}
+	});
+}
+handleScroll();
+</script>
+
+{% endblock %}

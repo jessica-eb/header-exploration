@@ -1,0 +1,16 @@
+.nav {
+	background-color: transparent;
+	border-bottom: 1px transparent solid;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+.nav__item {
+	color: #fff;
+	border-left: 1px transparent solid;
+}
+
+.nav__item--create {
+	color: #fff;
+}
