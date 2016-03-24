@@ -1,6 +1,6 @@
 .nav {
 	background-color: rgba(54, 58, 67, 0.4);
-	border-bottom: 1px transparent solid;
+	border-bottom: 1px rgba(54, 58, 67, 0.6) solid;
 	position: fixed;
 	top:0;
 	left:0;
@@ -8,7 +8,7 @@
 
 .nav__item {
 	color: #fff;
-	border-left: 1px #45494e solid;
+	border-left: 1px transparent solid;
 }
 
 .nav__item--create {
